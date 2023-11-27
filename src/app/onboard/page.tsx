@@ -13,10 +13,10 @@ export default function page() {
   return (
   
 
-<nav className="bg-white ">
-  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-  <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src="/logo.png" className="h-8" alt="Flowbite Logo" />
+<nav className="bg-white w-screen ">
+  <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
+  <a href="h" className="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="/logo.png" className="h-8" alt="Logo" />
       <span className="self-center text-2xl font-semibold whitespace-nowrap ">CargoSwift</span>
   </a>
   <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -40,7 +40,7 @@ export default function page() {
 <h1 className=' text-blue-400 '> Current Location </h1>
 </div>
 
-<div className='my-10 ml-4'>
+<div className='my-10 mx-4'>
 <Iframe width="100%" height="500"  url="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=+(tokyo)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></Iframe>
 </div>
 
@@ -51,7 +51,7 @@ export default function page() {
 <Drawer.Root>
 
       <Drawer.Trigger asChild>  
-        <button className='w-full bg-black text-center mb-20 p-5 text-white mx-2 rounded-md'>Next</button>
+        <div className='bg-black text-center mb-20 p-5 text-white mx-4 rounded-md focus-none'>Next</div>
       </Drawer.Trigger>
       <Drawer.Portal>
         <Drawer.Overlay className="fixed inset-0 bg-black/40" />
@@ -72,7 +72,10 @@ export default function page() {
     <span className="m-auto text-2xl font-thin">+</span>
   </button>
 </div>
-<button className='bg-black w-full rounded-md p-3 m-3 text-md text-white'>Proceed</button>
+<a href='/onboard2'>
+<div className='bg-black   rounded-md p-3 m-3 text-md text-white'><h1 className='text-center'>Proceed</h1></div>
+</a>
+
 </div>
 
 
