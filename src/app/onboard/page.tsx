@@ -60,14 +60,14 @@ export default function page() {
             <div className="mx-auto w-12 h-1.5 flex-shrink-0 rounded-full bg-zinc-300 " />
             <div className="max-w-md mx-auto">
               <Drawer.Title className="font-medium mb-4">
-                Select Weight
+                Select Weight in KG
               </Drawer.Title>
               <div>
               <div className="flex flex-row h-10 w-1/2 rounded-lg mx-auto relative bg-transparent mt-1">
     <button data-action="decrement" className=" bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer outline-none">
       <span className="m-auto text-2xl font-thin">−</span>
     </button>
-    <input type="number" className="outline-none focus:outline-none text-center w-1/2 bg-gray-300 font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none" name="custom-input-number" value="0"></input>
+    <input type="number" className="outline-none focus:outline-none text-center w-1/2 bg-gray-300 font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none" name="custom-input-number" value="550"></input>
   <button data-action="increment" className="bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer">
     <span className="m-auto text-2xl font-thin">+</span>
   </button>
