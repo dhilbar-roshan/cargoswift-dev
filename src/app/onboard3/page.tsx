@@ -1,5 +1,8 @@
+'use client'
 import React from 'react'
 import { IoEyeOutline } from "react-icons/io5";
+import { Drawer } from 'vaul';
+import Iframe from 'react-iframe';
 
 export default function page() {
   return (
@@ -8,7 +11,7 @@ export default function page() {
     <div className='bg-white w-screen'>
       
       <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
-  <a href="h" className="flex items-center space-x-3 rtl:space-x-reverse">
+  <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
       <img src="/logo.png" className="h-8" alt="Logo" />
       <span className="self-center text-2xl font-semibold whitespace-nowrap ">CargoSwift</span>
   </a>
@@ -69,7 +72,7 @@ export default function page() {
                         </p>
                     </div>
                     <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                        $3467
+                    <IoEyeOutline />
                     </div>
                 </div>
             </li>
@@ -87,7 +90,7 @@ export default function page() {
                         </p>
                     </div>
                     <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                        $67
+                    <IoEyeOutline />
                     </div>
                 </div>
             </li>
@@ -105,7 +108,7 @@ export default function page() {
                         </p>
                     </div>
                     <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                        $367
+                    <IoEyeOutline />
                     </div>
                 </div>
             </li>
@@ -123,7 +126,7 @@ export default function page() {
                         </p>
                     </div>
                     <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                        $2367
+                    <IoEyeOutline />
                     </div>
                 </div>
             </li>
@@ -133,6 +136,43 @@ export default function page() {
 
 
 </div>
+
+<Drawer.Root>
+
+      <Drawer.Trigger asChild>  
+        <div className='bg-black text-center mb-20 p-5 text-white mx-4 rounded-md focus-none'>Next</div>
+      </Drawer.Trigger>
+      <Drawer.Portal>
+        <Drawer.Overlay className="fixed inset-0 bg-black/40" />
+        <Drawer.Content className="bg-zinc-100 flex flex-col rounded-t-[10px] mt-24 fixed bottom-0 left-0 right-0">
+          <div className="p-4  mb-16 bg-white rounded-t-[10px] flex-1">
+            <div className="mx-auto w-12 h-1.5 flex-shrink-0 rounded-full bg-zinc-300 " />
+            <div className="max-w-md mx-auto">
+              <Drawer.Title className="font-medium mb-4">
+                Select Destination
+              </Drawer.Title>
+              <div>
+
+              <div className='my-10 mx-4'>
+<Iframe width="100%" height="500"  url="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=+(tokyo)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></Iframe>
+</div>
+
+
+<a href='/payment'>
+<div className='bg-black   rounded-md p-3 m-3 text-md text-white'><h1 className='text-center'>Proceed to Pay</h1></div>
+</a>
+
+</div>
+
+
+            </div>
+          </div>
+       
+        </Drawer.Content>
+      </Drawer.Portal>
+    </Drawer.Root>
+
+
 
 
 

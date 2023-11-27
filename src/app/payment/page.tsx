@@ -1,11 +1,12 @@
 import React from 'react'
-import Trucks from '@/app/components/trucks'
+import { IoCheckmarkDoneCircle } from "react-icons/io5";
+
 
 export default function page() {
   return (
     <div>
-          <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
-  <a href="h" className="flex items-center space-x-3 rtl:space-x-reverse">
+            <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
+  <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
       <img src="/logo.png" className="h-8" alt="Logo" />
       <span className="self-center text-2xl font-semibold whitespace-nowrap ">CargoSwift</span>
   </a>
@@ -19,15 +20,17 @@ export default function page() {
 
   </div>
   </div>
-  <div className='bg-white'>
-    <Trucks/>
-    </div>
-    <a href='/onboard3'>
-<div className='bg-black   rounded-md p-3 m-3 text-md text-white'><h1 className='text-center'>Next</h1></div>
-</a>
 
-    
-<div className="fixed bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 ">
+    <div className="flex items-center justify-center h-screen">
+    <div className=' flex justify-center text-5xl'>
+  <IoCheckmarkDoneCircle />
+</div>
+
+     
+    <h1 className="text-black font-bold text-2xl">Payment Done Successfully</h1>
+  </div>
+
+  <div className="fixed bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 ">
     <div className="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
         <button type="button" className="inline-flex flex-col items-center justify-center px-5  ">
             <svg className="w-5 h-5 mb-2 text-black  group-hover:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -55,9 +58,13 @@ export default function page() {
             <span className="text-sm text-gray-500 group-hover:text-black">Profile</span>
         </button>
     </div>
-</div>
-        
-      
     </div>
+
+
+  </div>
+
+
+
+  
   )
 }
