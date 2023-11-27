@@ -1,6 +1,13 @@
+'use client'
 import React from 'react'
 import { IoLocation } from "react-icons/io5";
+import { BiCurrentLocation } from "react-icons/bi";
 import Iframe from 'react-iframe';
+import { Drawer } from 'vaul';
+
+
+
+
 
 export default function page() {
   return (
@@ -32,12 +39,93 @@ export default function page() {
   <div className='mt-10 flex mx-5 rounded-xl text-xl text-gray-700 border  '>
 <div className='mx-2 my-1 '> <IoLocation /> </div>
     <h1 className='rounded-xl'>Tokyo </h1>
-
-
 </div>
+
+<div className='mt-2 flex mx-5 rounded-xl text-xl text-gray-700  '>
+<div className='mx-2 my-1 text-blue-400'> <BiCurrentLocation></BiCurrentLocation> </div>
+<h1 className=' text-blue-400 '> Current Location </h1>
+</div>
+
+
 <div className='mt-10 mx-2'>
-<Iframe width="100%" height="600"  url="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(tokyo)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></Iframe>
+<Iframe width="100%" height="500"  url="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(tokyo)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></Iframe>
 </div>
+
+
+
+<Drawer.Root>
+      <Drawer.Trigger asChild>
+        <div className='bg-black text-center mt-10 p-5 text-white mx-2 rounded-md'>Next</div>
+      </Drawer.Trigger>
+      <Drawer.Portal>
+        <Drawer.Overlay className="fixed inset-0 bg-black/40" />
+        <Drawer.Content className="bg-zinc-100 flex flex-col rounded-t-[10px] mt-24 fixed bottom-0 left-0 right-0">
+          <div className="p-4 bg-white rounded-t-[10px] flex-1">
+            <div className="mx-auto w-12 h-1.5 flex-shrink-0 rounded-full bg-zinc-300 mb-8" />
+            <div className="max-w-md mx-auto">
+              <Drawer.Title className="font-medium mb-4">
+                Select Weight
+              </Drawer.Title>
+              <p className="text-zinc-600 mb-2">
+                This component can be used as a replacement for a Dialog on
+                mobile and tablet devices.
+              </p>
+        
+            </div>
+          </div>
+          <div className="p-4 bg-zinc-100 border-t border-zinc-200 mt-auto">
+            <div className="flex gap-6 justify-end max-w-md mx-auto">
+              <a
+                className="text-xs text-zinc-600 flex items-center gap-0.25"
+                href="https://github.com/emilkowalski/vaul"
+                target="_blank"
+              >
+                GitHub
+                <svg
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  aria-hidden="true"
+                  className="w-3 h-3 ml-1"
+                >
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                  <path d="M15 3h6v6"></path>
+                  <path d="M10 14L21 3"></path>
+                </svg>
+              </a>
+              <a
+                className="text-xs text-zinc-600 flex items-center gap-0.25"
+                href="https://twitter.com/emilkowalski_"
+                target="_blank"
+              >
+                Twitter
+                <svg
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  aria-hidden="true"
+                  className="w-3 h-3 ml-1"
+                >
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                  <path d="M15 3h6v6"></path>
+                  <path d="M10 14L21 3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </Drawer.Content>
+      </Drawer.Portal>
+    </Drawer.Root>
 
 
 
