@@ -13,7 +13,7 @@ export default function page() {
   return (
   
 
-<nav className="bg-white h-screen ">
+<nav className="bg-white ">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
   <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
       <img src="/logo.png" className="h-8" alt="Flowbite Logo" />
@@ -46,8 +46,8 @@ export default function page() {
 
 <div>
 <Drawer.Root>
-<div className='my-10 mx-2'>
-<Iframe width="100%" height="500"  url="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(tokyo)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></Iframe>
+<div className='my-10 ml-4'>
+<Iframe width="100%" height="500"  url="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=+(tokyo)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></Iframe>
 </div>
       <Drawer.Trigger asChild>  
         <button className='w-full bg-black text-center mb-20 p-5 text-white mx-2 rounded-md'>Next</button>
