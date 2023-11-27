@@ -40,15 +40,16 @@ export default function page() {
 <h1 className=' text-blue-400 '> Current Location </h1>
 </div>
 
+<div className='my-10 ml-4'>
+<Iframe width="100%" height="500"  url="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=+(tokyo)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></Iframe>
+</div>
 
 
 
 
 <div>
 <Drawer.Root>
-<div className='my-10 ml-4'>
-<Iframe width="100%" height="500"  url="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=+(tokyo)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></Iframe>
-</div>
+
       <Drawer.Trigger asChild>  
         <button className='w-full bg-black text-center mb-20 p-5 text-white mx-2 rounded-md'>Next</button>
       </Drawer.Trigger>
@@ -61,10 +62,20 @@ export default function page() {
               <Drawer.Title className="font-medium mb-4">
                 Select Weight
               </Drawer.Title>
-              <p className="text-zinc-600">
-                This component can be used as a replacement for a Dialog on
-                mobile and tablet devices.
-              </p>
+              <div>
+              <div className="flex flex-row h-10 w-1/2 rounded-lg mx-auto relative bg-transparent mt-1">
+    <button data-action="decrement" className=" bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer outline-none">
+      <span className="m-auto text-2xl font-thin">−</span>
+    </button>
+    <input type="number" className="outline-none focus:outline-none text-center w-1/2 bg-gray-300 font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none" name="custom-input-number" value="0"></input>
+  <button data-action="increment" className="bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer">
+    <span className="m-auto text-2xl font-thin">+</span>
+  </button>
+</div>
+<button className='bg-black w-full rounded-md p-3 m-3 text-md text-white'>Proceed</button>
+</div>
+
+
             </div>
           </div>
        
