@@ -31,7 +31,7 @@ export default function page() {
                             <label  className="text-gray-500">Remember me</label>
                           </div>
                       </div>
-                      <a href="#" className="text-sm font-medium text-primary-600 hover:underline ">forgot password?</a>
+                      <a href="#" className="text-sm font-medium text-primary-600 hover:underline ">forgot password ?</a>
                   </div>
                   <a href='/onboard'>
                   <button  className="w-full text-white bg-black hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Sign in</button>
